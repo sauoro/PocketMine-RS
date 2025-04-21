@@ -3,6 +3,9 @@
 > "Me and my team of highly trained Rustaceans™ have finally done what no sane developer would attempt: rewriting PocketMine-MP in Rust. Why? Because PHP wasn’t giving us enough compile-time existential crises."
 > — Rustaceans Incorporated™
 
+# DISCLAIMER:
+Everything is from [PocketMine-MP](https://github.com/pmmp/PocketMine-MP), please rate start to the original project and without it we couldn't make this done.
+
 ---
 
 ## 📋 Table of Contents
