@@ -1,4 +1,3 @@
-```markdown
 # rustpocketmine 🦀
 
 > “Me and my team of highly trained Rustaceans are here to bring you the world’s first 100% totally-not-overengineered remake of PocketMine–in Rust!”  
@@ -77,4 +76,3 @@ Meet the crack squad behind this madness:
 ---
 
 © 2025 **Rustaceans Anonymous** — All rights reversed.  
-```
