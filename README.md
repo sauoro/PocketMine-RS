@@ -4,7 +4,7 @@
 > — Rustaceans Incorporated™
 
 # DISCLAIMER:
-Everything is from [PocketMine-MP](https://github.com/pmmp/PocketMine-MP), please rate start to the original project and without it we couldn't make this done.
+Everything is from [PocketMine-MP](https://github.com/pmmp/PocketMine-MP), please rate star to the original project and without it we couldn't make this done.
 
 ---
 
