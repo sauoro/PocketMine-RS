@@ -146,7 +146,7 @@ The idea came to life during a 3AM voice call when someone said, "wouldn’t it 
    ```
 2. **Clone the Repository**  
    ```bash
-   git clone https://github.com/yourorg/PocketMine-RS.git
+   git clone https://github.com/sauoro/PocketMine-RS.git
    cd PocketMine-RS
    cargo build --release
    ```
