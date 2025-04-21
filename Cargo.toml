@@ -1,0 +1,8 @@
+[package]
+name = "pmmp_rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+byteorder = "1.4"
+thiserror = "1.0"
