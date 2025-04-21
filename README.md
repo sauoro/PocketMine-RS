@@ -192,9 +192,8 @@ The idea came to life during a 3AM voice call when someone said, "wouldn’t it 
 
 ## Community & Support
 
-- **Discord**: Join for moral support and mutual debugging trauma.  
+- **Discord**: Join for moral support and mutual debugging trauma. [Discord](https://discord.gg/hSTcSRcNcQ) 
 - **GitHub Issues**: Please scream responsibly.  
-- **Twitter**: We don’t run it. Ferris does.
 
 ---
 
