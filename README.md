@@ -1,6 +1,6 @@
 # PocketMine-RS 🦀🚀
 
-> “Me and my team of highly trained Rustaceans™ are thrilled to unveil the world’s first 100% totally‑not‑overengineered PocketMine‑MP rewrite in pure Rust. Because why settle for PHP when you can borrow without ever returning?”
+> "Me and my team of highly trained Rustaceans™ have finally done what no sane developer would attempt: rewriting PocketMine-MP in Rust. Why? Because PHP wasn’t giving us enough compile-time existential crises."
 > — Rustaceans Incorporated™
 
 ---
@@ -31,36 +31,37 @@
 
 ## About the Project
 
-**PocketMine‑RS** is our audacious—and delightfully absurd—attempt to rebuild the PocketMine‑MP server from the ground up in Rust. We aim to:
+**PocketMine‑RS** is the most ambitious, unnecessary, and totally epic rewrite of PocketMine‑MP you never asked for. We decided PHP wasn’t giving us enough headaches, so we ported everything into a language where the compiler is smarter than us.
 
-- **Zero** feature parity (for now)  
-- **One hundred** percent raw ambition  
-- **Infinite** meme fodder for the community  
+This project is:
 
-Born out of a caffeine‑fueled brainstorming session (and a questionable moral compass), this project exists to answer the question: “What if we did everything in Rust?” Spoiler: some things probably shouldn’t be.
+- **0% complete**
+- **100% serious** (seriously joking)
+- **∞% chaos**
+
+The idea came to life during a 3AM voice call when someone said, "wouldn’t it be funny if...?" Spoiler: it was.
 
 ---
 
 ## Why Rust?
 
-> “Why rewrite PocketMine‑MP in Rust?”  
-> — Approximately 42 confused developers
+> “Why not write it in JavaScript?” — A banned user
 
 1. **Memory Safety**  
-   - Rust’s borrow checker prevents data races—until we inevitably sprinkle `unsafe`.  
+   Rust ensures you can’t shoot yourself in the foot—unless you try really hard. Then it’ll compile and shoot you in the face instead.  
 2. **Performance**  
-   - Zero‑cost abstractions let us brag about 0.01% TPS improvements.  
+   So fast it outruns your motivation to finish the project.  
 3. **Modern Ecosystem**  
-   - Cargo: part miracle, part existential dread.  
-4. **Developer Masochism**  
-   - Advanced type‑level programming is the new Sudoku.
+   Cargo makes dependency hell a fun little weekend escape.  
+4. **Developer Therapy**  
+   Nothing beats the emotional rollercoaster of pleasing the borrow checker.
 
 ---
 
 ## Vision & Mission
 
-- **Vision:** Deliver the most memory‑safe Minecraft server that still crashes in spectacular (and comedic) fashion.  
-- **Mission:** Fuse Rust’s fearless concurrency model with a real‑time game engine, interspersed with enough compile‑time checks to keep us employed.
+- **Vision:** A memory-safe, multithreaded, async-enabled Bedrock server that sometimes boots.  
+- **Mission:** Build the most over-engineered Minecraft server of all time and pretend it’s for performance.
 
 ---
 
@@ -68,48 +69,33 @@ Born out of a caffeine‑fueled brainstorming session (and a questionable moral 
 
 ### Async Reactor Core
 
-- **Custom MIO/Epoll Hybrid**  
-  Orchestrates events across threads with zero‑cost futures.  
-- **Task Scheduler**  
-  Prioritizes I/O‑heavy tasks while ignoring panic‑inducers.  
-- **Plugin Hooks**  
-  Instrument entry/exit points for maximum extensibility.
+- **Custom Event Reactor**: Built entirely on `tokio`, duct tape, and misplaced optimism.  
+- **Task Scheduler**: Randomizes which async tasks run first for that authentic chaos vibe.  
+- **Hot-Swappable Panic Hooks**: Because you never know when your runtime will just... give up.
 
 ### Protocol Stack
 
-- **Bedrock Protocol v1.x**  
-  Full reimplementation, no half measures.  
-- **Type‑Level Guarantees**  
-  Compile‑time validity for every packet (mostly).  
-- **Compression & Encryption**  
-  GZIP plus our proprietary “Rust Obfuscation™”.
+- **Bedrock Protocol v1.x-ish**: Inspired by the official protocol, but with more comments that say "???".  
+- **Packet Parser**: Validates data like a strict librarian with a taser.  
+- **Compression**: Supports GZIP and developer tears.
 
 ### Plugin Ecosystem
 
-- **WASM Modules**  
-  Write plugins in any language that compiles to WASM (yes, including Brainfuck).  
-- **Rust DSL**  
-  Embedded domain‑specific language for game logic—docs coming soon™.  
-- **PHP Bridge**  
-  Experimental compatibility layer; sacrifices semicolons for soul.
+- **WASM Plugins**: Because nothing screams extensibility like trying to debug a WASM panic in Rust.  
+- **Rusty Scripting DSL**: Currently just `println!("Hello plugin world!")`, but dream big.  
+- **PHP Bridge**: We sacrificed a goat to make this work. It didn’t.
 
 ### Storage & Persistence
 
-- **CRDT‑Based Chunk Sync**  
-  Guarantees eventual consistency—chaos optional.  
-- **Transactional BTreeMap**  
-  Powered by `DroppableCell` locks for “safety”.  
-- **RDBMS Integrations**  
-  Experimental SQLite and Postgres backends—handle with care.
+- **Chunk Storage**: Implemented using Schrödinger’s serialization—it both works and doesn’t.  
+- **Persistence Engine**: Saves data on a quantum level (may or may not be real).  
+- **Experimental DB Support**: Now with 97% more SQL injection resistance!
 
 ### Metrics & Observability
 
-- **Prometheus Exporter**  
-  Metrics in alpha, subject to brokenness.  
-- **Tracing with `tracing` Crate**  
-  Capture spans—and tears—during debugging.  
-- **Structured Logging**  
-  JSON logs by default, because humans love parsing JSON.
+- **Prometheus**: If it works, it exports. If not, it still exports (errors).  
+- **Tracing**: You can trace execution all the way to the root of your poor life choices.  
+- **Logs**: Output in JSON, YAML, Morse code, and interpretive dance.
 
 ---
 
@@ -117,10 +103,10 @@ Born out of a caffeine‑fueled brainstorming session (and a questionable moral 
 
 | Pillar                         | Principle                                                           |
 | ------------------------------ | ------------------------------------------------------------------- |
-| 🔒 **Safety First**            | Borrow checker is our gatekeeper—just don’t ask about `unsafe`.     |
-| ⚡ **Performance Obsession**    | Microbenchmarks no one reads, but we brag anyway.                  |
-| 🧩 **Unbreakable Extensibility**| Hooks, events, and callbacks everywhere—strap in.                   |
-| 💡 **Relentless Experimentation**| We merge feature branches into `main` and pray nothing explodes.    |
+| 🔒 **Safety Last**            | `unsafe` is just another word for spicy.     |
+| ⚡ **Speedrun Development**    | Who needs tests when you can YOLO deploy?                  |
+| 🧩 **Extensibility++**| Every part is modular, replaceable, and unstable.                   |
+| 💡 **Experimental All The Way**| If it compiles, ship it. If it doesn’t, compile harder.    |
 
 ---
 
@@ -128,27 +114,27 @@ Born out of a caffeine‑fueled brainstorming session (and a questionable moral 
 
 | Name                | Title                         | Specialty                                            |
 | ------------------- | ----------------------------- | ---------------------------------------------------- |
-| **Rusty McRust**    | Lead Overthinker              | Stares at `unsafe` until code cries for mercy         |
-| **Ferris the Crab** | Mascot & CI Engineer          | Scuttles through builds, collecting bugs              |
-| **Borrow Checker**  | Quality Assurance             | Denies all mutable requests with polite error codes   |
-| **Iterator Guy**    | API Design Evangelist         | Chains everything—data, control, and caffeination     |
-| **Macro Magician**  | Metaprogramming Specialist    | Generates code that generates more code               |
+| **Rusty McRustface**    | Lead Compiler Whisperer              | Tames lifetimes with sheer panic         |
+| **Ferris the Crab** | Chief Morale Officer          | Snips code and confidence equally              |
+| **Borrow Checker**  | Head of HR             | Denies your requests with cryptic notes   |
+| **Macrosaurus**    | Code Generator Overlord         | Writes macros that write macros that write errors     |
+| **Mr. Segfault**  | QA Director    | Makes sure everything breaks just before release               |
 
 ---
 
 ## What the PMMP Devs Are Saying
 
-> **@dktapps (Dylan)**  
-> “I juggle this project alongside three cats and a day job. Please be gentle.”
+> **@dktapps**  
+> "This is either a prank or a cry for help."
 
 > **@shoghicp (Shoghi Cervantes)**  
-> “PHP earned its stripes for a reason; don’t make me debug your Rust.”
+> "When I said 'rewrite PMMP,' I didn’t mean like this."
 
-> **PMMP CI Bot**  
-> “🚨 Build failed: too many epicycles in the networking layer.”
+> **@intyre**  
+> “I read the code. I cried.”
 
-> **The Community**  
-> *“This is either genius or madness… definitely both.”*
+> **PMMP Discord Moderator**  
+> "Stop tagging me about this."
 
 ---
 
@@ -158,7 +144,7 @@ Born out of a caffeine‑fueled brainstorming session (and a questionable moral 
    ```bash
    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
    ```
-2. **Clone & Build**  
+2. **Clone the Repository**  
    ```bash
    git clone https://github.com/yourorg/PocketMine-RS.git
    cd PocketMine-RS
@@ -166,89 +152,75 @@ Born out of a caffeine‑fueled brainstorming session (and a questionable moral 
    ```
 3. **Run the Server**  
    ```bash
-   ./target/release/pocketmine-rs --port 19132 --max-players 42
+   ./target/release/pocketmine-rs --port 19132 --max-players 10
    ```
-4. **Connect**  
-   Point your Bedrock client at `localhost:19132` and prepare for existential dread.
+4. **Regret Everything**  
+   Start Minecraft Bedrock. Connect. Watch it maybe work.
 
 ---
 
 ## Development Workflow
 
-- **Branching Model**  
-  - `main`: Bleeding‑edge insanity  
-  - `dev`: Somewhat stable chaos  
-  - Feature branches: Playground of doom  
+- **Branching Model**:  
+  - `main`: For brave souls only.  
+  - `dev`: Slightly less cursed.  
+  - `panic-hotfix-*`: Used frequently.
 
-- **Code Reviews**  
-  - Require at least one sarcastic comment per PR.  
-  - API changes demand a haiku in the description.  
+- **Code Reviews**:  
+  - PRs must include one meme and a bug fix. Preferably unrelated.  
 
-- **CI/CD**  
-  - GitHub Actions runs `cargo fmt`, `cargo clippy`, and our Tears Collector.  
-  - Builds must pass before merging—otherwise, buyer’s remorse.
+- **CI/CD**:  
+  - GitHub Actions, Travis, Jenkins, and probably a hamster wheel.
 
 ---
 
 ## Testing & Quality Assurance
 
-- **Automated Tests**  
-  - Unit, integration, and property‑based tests (mostly passing).  
-- **Fuzzing**  
-  - Uses `cargo-fuzz` to uncover panics and hilarious edge cases.  
-- **Benchmark Suite**  
-  - Microbenchmarks under review (performance claims subject to verification).
+- **Unit Tests**: Every function tested. Except the broken ones.  
+- **Fuzzing**: Because "expected behavior" is just a suggestion.  
+- **Benchmarking**: Fast. Probably. We haven't checked.
 
 ---
 
 ## Roadmap & Milestones
 
-- **v0.0.1-alpha** (Q2 2025)  
-  - Networking MVP  
-  - Player join/quit events  
-  - First official memeworthy meltdown
-
-- **v0.1.0-beta** (TBD)  
-  - Plugin API proof‑of‑concept  
-  - Chunk streaming demo
-
-- **v1.0.0** (Estimated never)  
-  - Feature parity with PocketMine‑MP  
-  - Official “Rustaceans in Distress” meme pack
+- **v0.0.1-alpha**: Accepts connections and occasionally logs them.  
+- **v0.1.0-beta**: Commands maybe work. Don’t quote us.  
+- **v1.0.0**: Achieves sentience and forks itself.
 
 ---
 
 ## Community & Support
 
-- **Discord**: Join `#pocketmine-rs` for random bug reports and existential memes.  
-- **GitHub Issues**: Label issues with “urgent” and watch us pretend to care.  
-- **Twitter**: Follow [@PocketMineRS](https://twitter.com/PocketMineRS) for build status GIFs.
+- **Discord**: Join for moral support and mutual debugging trauma.  
+- **GitHub Issues**: Please scream responsibly.  
+- **Twitter**: We don’t run it. Ferris does.
 
 ---
 
 ## FAQ
 
-**Q: Will this ever be stable?**  
-A: Stability is a social construct. We prefer chaos.
+**Q: Why does it exist?**  
+A: Because no one stopped us in time.
 
-**Q: Can I write plugins in PHP?**  
-A: Only if you bribe the Macro Magician.
+**Q: Can I use it in production?**  
+A: You can use _anything_ in production if you're bold enough.
 
-**Q: Does it actually work?**  
-A: It compiles. That’s half the battle.
+**Q: How stable is it?**  
+A: It's stable... in the sense that it fails consistently.
 
 ---
 
 ## License & Credits
 
-- **License**: MIT — because we like to live dangerously.  
+- **License**: MIT — because we legally can’t stop you.  
 - **Credits**:  
-  - PocketMine‑MP team for inspiration  
-  - Rust community for endless memes  
-  - All brave souls who dared run `cargo build`
+  - The PMMP devs, for giving us something beautiful to parody  
+  - The Rust community, for enabling our hubris  
+  - You, for reading this far. You’re the real MVP.
 
 ---
 
-_May your borrow checker be ever in your favor!_
+_May the borrow checker bless your soul._
 
-def not made by AI btw
+shut up
