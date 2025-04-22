@@ -1,3 +1,5 @@
+// src/log/mod.rs
+
 #![allow(dead_code)]
 
 mod attachable;
