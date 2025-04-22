@@ -1,9 +1,8 @@
 // src/utils/error.rs
-
 use std::error::Error;
 use std::fmt;
 
-#[derive(Debug)]
+#[derive(Debug, Clone)] // Ensure Clone is derived
 pub struct BinaryDataException(String);
 
 impl BinaryDataException {
@@ -25,4 +24,3 @@ impl fmt::Display for BinaryDataException {
 impl Error for BinaryDataException {}
 
 pub type Result<T> = std::result::Result<T, BinaryDataException>;
-

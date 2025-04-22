@@ -1,10 +1,9 @@
 // src/utils/binary.rs
-
 #![allow(dead_code)]
 
 use crate::utils::error::{BinaryDataException, Result};
 use byteorder::{BigEndian, LittleEndian, ReadBytesExt, WriteBytesExt};
-use std::io::{Cursor, Write};
+use std::io::{Cursor}; // Removed unused Write
 
 pub const SIZEOF_SHORT: usize = 2;
 pub const SIZEOF_INT: usize = 4;
@@ -346,6 +345,7 @@ pub fn write_unsigned_var_int(mut value: u32) -> Vec<u8> {
         buf.push(((value & 0x7F) | 0x80) as u8);
         value >>= 7;
         if buf.len() >= 5 {
+            // In PM, this would panic. Consider returning Err instead.
             panic!("Value {} too large to be encoded as a VarInt", value);
         }
     }
@@ -390,6 +390,7 @@ pub fn write_unsigned_var_long(mut value: u64) -> Vec<u8> {
         buf.push(((value & 0x7F) | 0x80) as u8);
         value >>= 7;
         if buf.len() >= 10 {
+            // In PM, this would panic. Consider returning Err instead.
             panic!("Value {} too large to be encoded as a VarLong", value);
         }
     }

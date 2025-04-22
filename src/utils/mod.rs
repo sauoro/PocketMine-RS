@@ -5,4 +5,3 @@ pub mod error;
 pub mod limits;
 
 pub use binary_stream::BinaryStream;
-pub use error::{BinaryDataException, Result};

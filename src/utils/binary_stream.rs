@@ -1,5 +1,4 @@
 // src/utils/binary_stream.rs
-
 #![allow(dead_code)]
 
 use crate::utils::binary;
@@ -70,6 +69,10 @@ impl BinaryStream {
 
     pub fn get_remaining(&mut self) -> Result<&[u8]> {
         if self.offset >= self.buffer.len() {
+            // Return empty slice instead of erroring if already at end
+            if self.offset == self.buffer.len() {
+                return Ok(&self.buffer[self.offset..]);
+            }
             Err(BinaryDataException::from_str("No bytes left to read"))
         } else {
             let start = self.offset;
