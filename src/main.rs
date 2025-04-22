@@ -4,7 +4,6 @@ mod color;
 mod math;
 mod nbt;
 mod log;
-mod raknet;
 
 use crate::log::Logger;
 
