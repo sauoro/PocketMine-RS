@@ -21,6 +21,11 @@ impl fmt::Display for BinaryDataException {
     }
 }
 
+impl From<String> for BinaryDataException {
+    fn from(s: String) -> Self {
+        BinaryDataException::new(s)
+    }
+}
 impl Error for BinaryDataException {}
 
 pub type Result<T> = std::result::Result<T, BinaryDataException>;

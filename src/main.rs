@@ -1,12 +1,15 @@
+#![allow(clippy::too_many_arguments, clippy::enum_variant_names)]
 // src/main.rs
 mod utils;
 mod color;
 mod math;
 mod nbt;
 mod log;
+mod raknet;
 
-use crate::log::Logger;
+use log::Logger;
 
 fn main() {
-    log::GlobalLogger::info("RakNet module added (not yet integrated).");
+    let logger = Box::new(log::SimpleLogger::new());
+    logger.info("PocketMine-RS starting...");
 }
