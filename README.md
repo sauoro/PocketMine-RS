@@ -1,6 +1,6 @@
 # NEW REPO
 * This project is now **DEPRECATED**, we are no longer working on it.
-* Now we are woking in a new system: https://gthub.com/sauoro/amethyst
+* Now we are woking in a new system: https://github.com/sauoro/amethyst
 
 # PocketMine-RS 🦀🚀
 
