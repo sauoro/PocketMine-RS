@@ -1,3 +1,6 @@
+# NEW REPO
+Now we are woking in a new system: https://gthub.com/sauoro/amethyst
+
 # PocketMine-RS 🦀🚀
 
 > "Me and my team of highly trained Rustaceans™ have finally done what no sane developer would attempt: rewriting PocketMine-MP in Rust. Why? Because PHP wasn’t giving us enough compile-time existential crises."
