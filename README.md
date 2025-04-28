@@ -1,4 +1,4 @@
-* This project is now **DEPRECATED**, we are no longer working on it.
+## This project is now **DEPRECATED**, we are no longer working on it.
 
 # PLEASE, stop saying we are porting PMMP into Rust, that's a bad idea which started as a MEME:
 ## 1. Different Language Paradigms and Ecosystems:
