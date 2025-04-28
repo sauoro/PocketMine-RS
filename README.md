@@ -2,6 +2,23 @@
 * This project is now **DEPRECATED**, we are no longer working on it.
 * Now we are woking in a new system: https://github.com/sauoro/amethyst
 
+# PLEASE, stop saying we are porting PMMP into Rust, that's a bad idea which started as a MEME:
+## 1. Different Language Paradigms and Ecosystems:
+
+PHP's Dynamic Nature vs. Rust's Static Typing: PHP is dynamically typed and interpreted, offering rapid development and flexibility. Its ecosystem is vast and specifically tailored for web development, with a plethora of libraries for database interaction, networking, and web frameworks. Rust, on the other hand, is a statically typed, compiled language focused on performance, memory safety, and concurrency. Its ecosystem, while growing rapidly, is different and geared towards systems programming, embedded systems, and high-performance applications. Directly translating PHP's dynamic features and relying on its specific library ecosystem in a statically typed language like Rust would be incredibly complex and likely result in a less idiomatic and potentially less efficient Rust codebase.
+Memory Management Differences: PHP uses automatic memory management (garbage collection), which simplifies development but can introduce performance overhead. Rust employs a borrow checker system for memory safety without garbage collection, offering fine-grained control and excellent performance but requiring a different way of thinking about memory management. Porting a large PHP codebase to Rust would necessitate a complete rethinking of memory management strategies, which is a monumental task.
+## 2. Ecosystem and Library Mismatch:
+
+PMMP's Reliance on PHP Libraries: PMMP heavily relies on PHP's extensive standard library and its rich ecosystem of packages (e.g., for networking, database interaction, asynchronous operations). Replicating this functionality from scratch in Rust or finding equivalent, mature Rust libraries for every PMMP dependency would be a massive undertaking. Many PHP-specific libraries might not have direct equivalents in the Rust ecosystem.
+Community and Expertise: The PMMP community is deeply rooted in PHP. Rewriting it in Rust would mean potentially alienating the existing developer base and requiring a new community with expertise in Rust and the intricacies of the Minecraft: Bedrock Edition server environment to form.
+## 3. Performance Considerations are Nuanced:
+
+"Faster" Isn't Always Better in This Context: While Rust generally offers superior raw performance compared to PHP, the performance bottlenecks in a Minecraft server might not solely lie in the language itself. Factors like network I/O, database interactions, game logic efficiency, and the Bedrock Edition's network protocol also play significant roles. Simply rewriting in a "faster" language doesn't guarantee a dramatically better-performing server if these other bottlenecks aren't addressed. Optimizing the existing PHP codebase and architecture might yield more practical performance gains in the short to medium term.
+Development Effort vs. Potential Gain: The sheer effort required to rewrite a complex project like PMMP in Rust would be immense. The potential performance gains might not justify the massive investment of time and resources, especially when considering the maturity and existing features of the PHP codebase.
+## 4. Architectural Differences:
+
+PMMP's Design in PHP: PMMP's architecture and design patterns are likely influenced by PHP's characteristics. A direct port to Rust might not naturally align with Rust's strengths and could lead to an awkward and unidiomatic Rust codebase that doesn't leverage its concurrency and memory safety features effectively. A better approach would be to design a new system (like Amethyst) from the ground up, taking Rust's capabilities into account.
+
 # PocketMine-RS 🦀🚀
 
 > "Me and my team of highly trained Rustaceans™ have finally done what no sane developer would attempt: rewriting PocketMine-MP in Rust. Why? Because PHP wasn’t giving us enough compile-time existential crises."
